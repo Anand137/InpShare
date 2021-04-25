@@ -1,5 +1,5 @@
 import React from 'react';
-import {Text, TouchableOpacity} from 'react-native';
+import {Text, TouchableOpacity, View} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import styles from './styles';
 
@@ -7,7 +7,9 @@ const ShareModeSelection = props => {
   return (
     <LinearGradient colors={['#b06ab3', '#4568dc']} style={styles.container}>
       <LinearGradient
-        colors={['#BA8B02', '#181818']}
+        colors={['#22a4ef', '#4568dc']}
+        start={{x: 1, y: 0}}
+        end={{x: 0, y: 1}}
         style={styles.SelectionCircle}>
         <TouchableOpacity
           style={styles.SelectionCircleTouch}
@@ -18,7 +20,9 @@ const ShareModeSelection = props => {
         </TouchableOpacity>
       </LinearGradient>
       <LinearGradient
-        colors={['#BA8B02', '#181818']}
+        colors={['#22a4ef', '#4568dc']}
+        start={{x: 1, y: 0}}
+        end={{x: 0, y: 1}}
         style={styles.SelectionCircle}>
         <TouchableOpacity
           style={styles.SelectionCircleTouch}
